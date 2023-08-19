@@ -3,43 +3,73 @@
 function calculateTriangleArea() {
   const triangleB = getValueById("triangle-b");
   const triangleH = getValueById("triangle-h");
-  validate(triangleB, triangleH);
+  const validateCommand = validate(triangleB, triangleH);
+
+  if (validateCommand) {
+    return;
+  }
+
   const triangleArea = 0.5 * triangleB * triangleH;
-  console.log(triangleArea);
+  setToCalculatorArea("Triangle", triangleArea);
 }
 function calculateRhombusArea() {
   const rhombusD1 = getValueById("rhombus-d1");
   const rhombusD2 = getValueById("rhombus-d2");
-  validate(rhombusD1, rhombusD2);
+  const validateCommand = validate(rhombusD1, rhombusD2);
+
+  if (validateCommand) {
+    return;
+  }
+
   const rhombusArea = 0.5 * rhombusD1 * rhombusD2;
-  console.log(rhombusArea);
+  setToCalculatorArea("Rhombus", rhombusArea);
 }
 function calculatePentagonArea() {
   const pentagonP = getValueById("pentagon-p");
   const pentagonB = getValueById("pentagon-b");
-  validate(pentagonP, pentagonB);
+  const validateCommand = validate(pentagonP, pentagonB);
+
+  if (validateCommand) {
+    return;
+  }
+
   const pentagonArea = 0.5 * pentagonP * pentagonB;
-  console.log(pentagonArea);
+  setToCalculatorArea("Pentagon", pentagonArea);
 }
 
 function calculateRectangleArea() {
   const rectangleW = getValueById("rectangle-w");
   const rectangleL = getValueById("rectangle-l");
-  validate(rectangleW, rectangleL);
+  const validateCommand = validate(rectangleW, rectangleL);
+
+  if (validateCommand) {
+    return;
+  }
+
   const rectangleArea = rectangleW * rectangleL;
-  console.log(rectangleArea);
+  setToCalculatorArea("Rectangle", rectangleArea);
 }
 function calculateParallelogramArea() {
   const parallelogramB = getValueById("parallelogram-b");
   const parallelogramH = getValueById("parallelogram-h");
-  validate(parallelogramB, parallelogramH);
+  const validateCommand = validate(parallelogramB, parallelogramH);
+
+  if (validateCommand) {
+    return;
+  }
+
   const parallelogramArea = parallelogramB * parallelogramH;
-  console.log(parallelogramArea);
+  setToCalculatorArea("Parallelogram", parallelogramArea);
 }
 function calculateEllipseArea() {
   const ellipseA = getValueById("ellipse-a");
   const ellipseB = getValueById("ellipse-b");
-  validate(ellipseA, ellipseB);
-  const ellipseArea = 3.1416 * ellipseA * ellipseB;
-  console.log(ellipseArea.toFixed(2));
+  const validateCommand = validate(ellipseA, ellipseB);
+
+  if (validateCommand) {
+    return;
+  }
+
+  const ellipseArea = (3.1416 * ellipseA * ellipseB).toFixed(2);
+  setToCalculatorArea("Ellipse", ellipseArea);
 }
