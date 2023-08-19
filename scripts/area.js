@@ -22,6 +22,8 @@ function calculateTriangleArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
+  triangleBField.value = '';
+  triangleHString.value = '';
 }
 function calculateRectangleArea() {
   const rectangleWField = document.getElementById("rectangle-w");
@@ -45,6 +47,8 @@ function calculateRectangleArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
+  rectangleWField.value = '';
+  rectangleLField.value = '';
 }
 function calculateParallelogramArea() {
   const parallelogramBField = document.getElementById("parallelogram-b");
@@ -68,6 +72,8 @@ function calculateParallelogramArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
+  parallelogramBField.value = '';
+  parallelogramHField.value = '';
 }
 
 function calculateRhombusArea() {
@@ -92,6 +98,8 @@ function calculateRhombusArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
+  rhombusD1Field.value = '';
+  rhombusD2Field.value = '';
 }
 function calculatePentagonArea() {
   const pentagonPField = document.getElementById("pentagon-p");
@@ -115,6 +123,8 @@ function calculatePentagonArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
+  pentagonPField.value = '';
+  pentagonBField.value = '';
 }
 function calculateEllipseArea() {
   const ellipseAField = document.getElementById("ellipse-a");
@@ -138,4 +148,6 @@ function calculateEllipseArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
+  ellipseAField.value = '';
+  ellipseBField.value = '';
 }
