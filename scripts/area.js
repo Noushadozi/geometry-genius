@@ -12,9 +12,16 @@ function calculateTriangleArea() {
     alert("please insert a number");
     return;
   }
-
   const triangleArea = 0.5 * triangleB * triangleH;
-  console.log(triangleArea);
+
+  const calculationEntry = document.getElementById("calculation-entry");
+  const p = document.createElement("p");
+
+  p.innerHTML = `
+  Triangle ${triangleArea} cm<sup>2</sup>
+    <button class="my-4 btn btn-sm btn-success">Convert</button>
+  `;
+  calculationEntry.appendChild(p);
 }
 function calculateRectangleArea() {
   const rectangleWField = document.getElementById("rectangle-w");
@@ -30,7 +37,14 @@ function calculateRectangleArea() {
   }
 
   const rectangleArea = rectangleW * rectangleL;
-  console.log(rectangleArea);
+  const calculationEntry = document.getElementById("calculation-entry");
+  const p = document.createElement("p");
+
+  p.innerHTML = `
+  Rectangle ${rectangleArea} cm<sup>2</sup>
+    <button class="my-4 btn btn-sm btn-success">Convert</button>
+  `;
+  calculationEntry.appendChild(p);
 }
 function calculateParallelogramArea() {
   const parallelogramBField = document.getElementById("parallelogram-b");
@@ -46,7 +60,14 @@ function calculateParallelogramArea() {
   }
 
   const parallelogramArea = parallelogramB * parallelogramH;
-  console.log(parallelogramArea);
+  const calculationEntry = document.getElementById("calculation-entry");
+  const p = document.createElement("p");
+
+  p.innerHTML = `
+  Parallelogram ${parallelogramArea} cm<sup>2</sup>
+    <button class="my-4 btn btn-sm btn-success">Convert</button>
+  `;
+  calculationEntry.appendChild(p);
 }
 
 function calculateRhombusArea() {
@@ -63,7 +84,14 @@ function calculateRhombusArea() {
   }
 
   const rhombusArea = 0.5 * rhombusD1 * rhombusD2;
-  console.log(rhombusArea);
+  const calculationEntry = document.getElementById("calculation-entry");
+  const p = document.createElement("p");
+
+  p.innerHTML = `
+  Rhombus ${rhombusArea} cm<sup>2</sup>
+    <button class="my-4 btn btn-sm btn-success">Convert</button>
+  `;
+  calculationEntry.appendChild(p);
 }
 function calculatePentagonArea() {
   const pentagonPField = document.getElementById("pentagon-p");
@@ -79,7 +107,14 @@ function calculatePentagonArea() {
   }
 
   const pentagonArea = 0.5 * pentagonP * pentagonB;
-  console.log(pentagonArea);
+  const calculationEntry = document.getElementById("calculation-entry");
+  const p = document.createElement("p");
+
+  p.innerHTML = `
+  Pentagon ${pentagonArea} cm<sup>2</sup>
+    <button class="my-4 btn btn-sm btn-success">Convert</button>
+  `;
+  calculationEntry.appendChild(p);
 }
 function calculateEllipseArea() {
   const ellipseAField = document.getElementById("ellipse-a");
@@ -94,6 +129,13 @@ function calculateEllipseArea() {
     return;
   }
 
-  const ellipseArea = 3.1416 * ellipseA * ellipseB;
-  console.log(ellipseArea.toFixed(2));
+  const ellipseArea = (3.1416 * ellipseA * ellipseB).toFixed(2);
+  const calculationEntry = document.getElementById("calculation-entry");
+  const p = document.createElement("p");
+
+  p.innerHTML = `
+  Ellipse ${ellipseArea} cm<sup>2</sup>
+    <button class="my-4 btn btn-sm btn-success">Convert</button>
+  `;
+  calculationEntry.appendChild(p);
 }
