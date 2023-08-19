@@ -2,6 +2,7 @@ function getValueById(ID) {
   const Field = document.getElementById(ID);
   const valueString = Field.value;
   const value = parseFloat(valueString);
+  Field.value = '';
   return value;
 }
 function validate(a, b) {
