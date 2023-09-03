@@ -1,5 +1,6 @@
 // functional method using function from utilities
 
+// function for Triangle
 function calculateTriangleArea() {
   const triangleB = getValueById("triangle-b");
   const triangleH = getValueById("triangle-h");
@@ -12,6 +13,8 @@ function calculateTriangleArea() {
   const triangleArea = 0.5 * triangleB * triangleH;
   setToCalculatorArea("Triangle", triangleArea);
 }
+
+// function for Rhombus
 function calculateRhombusArea() {
   const rhombusD1 = getValueById("rhombus-d1");
   const rhombusD2 = getValueById("rhombus-d2");
@@ -24,6 +27,8 @@ function calculateRhombusArea() {
   const rhombusArea = 0.5 * rhombusD1 * rhombusD2;
   setToCalculatorArea("Rhombus", rhombusArea);
 }
+
+// function for pentagon
 function calculatePentagonArea() {
   const pentagonP = getValueById("pentagon-p");
   const pentagonB = getValueById("pentagon-b");
@@ -37,6 +42,7 @@ function calculatePentagonArea() {
   setToCalculatorArea("Pentagon", pentagonArea);
 }
 
+// function for Rectangle
 function calculateRectangleArea() {
   const rectangleW = getValueById("rectangle-w");
   const rectangleL = getValueById("rectangle-l");
@@ -61,6 +67,8 @@ function calculateParallelogramArea() {
   const parallelogramArea = parallelogramB * parallelogramH;
   setToCalculatorArea("Parallelogram", parallelogramArea);
 }
+
+// function for ellipse
 function calculateEllipseArea() {
   const ellipseA = getValueById("ellipse-a");
   const ellipseB = getValueById("ellipse-b");

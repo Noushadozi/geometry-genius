@@ -23,9 +23,10 @@ function calculateTriangleArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
-  triangleBField.value = '';
-  triangleHString.value = '';
+  triangleBField.value = "";
+  triangleHString.value = "";
 }
+
 // function for Rectangle
 function calculateRectangleArea() {
   const rectangleWField = document.getElementById("rectangle-w");
@@ -49,9 +50,10 @@ function calculateRectangleArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
-  rectangleWField.value = '';
-  rectangleLField.value = '';
+  rectangleWField.value = "";
+  rectangleLField.value = "";
 }
+
 // function for Parallelogram
 function calculateParallelogramArea() {
   const parallelogramBField = document.getElementById("parallelogram-b");
@@ -75,8 +77,8 @@ function calculateParallelogramArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
-  parallelogramBField.value = '';
-  parallelogramHField.value = '';
+  parallelogramBField.value = "";
+  parallelogramHField.value = "";
 }
 
 // function for Rhombus
@@ -102,9 +104,10 @@ function calculateRhombusArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
-  rhombusD1Field.value = '';
-  rhombusD2Field.value = '';
+  rhombusD1Field.value = "";
+  rhombusD2Field.value = "";
 }
+
 // function for pentagon
 function calculatePentagonArea() {
   const pentagonPField = document.getElementById("pentagon-p");
@@ -128,9 +131,10 @@ function calculatePentagonArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
-  pentagonPField.value = '';
-  pentagonBField.value = '';
+  pentagonPField.value = "";
+  pentagonBField.value = "";
 }
+
 // function for ellipse
 function calculateEllipseArea() {
   const ellipseAField = document.getElementById("ellipse-a");
@@ -154,6 +158,6 @@ function calculateEllipseArea() {
     <button class="my-4 btn btn-sm btn-success">Convert</button>
   `;
   calculationEntry.appendChild(p);
-  ellipseAField.value = '';
-  ellipseBField.value = '';
+  ellipseAField.value = "";
+  ellipseBField.value = "";
 }
