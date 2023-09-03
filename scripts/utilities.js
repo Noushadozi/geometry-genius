@@ -5,6 +5,8 @@ function getValueById(ID) {
   Field.value = '';
   return value;
 }
+
+//  function to validate data
 function validate(a, b) {
   if (isNaN(a) || isNaN(b)) {
     alert("please insert a number");
@@ -12,6 +14,8 @@ function validate(a, b) {
   }
 }
 
+
+// function setToCalculator
 function setToCalculatorArea(areaName, area) {
   const calculationEntry = document.getElementById("calculation-entry");
   const p = document.createElement("p");
