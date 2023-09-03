@@ -1,5 +1,6 @@
-// normal easy method
+// normal easy repetitive method
 
+// function for Triangle
 function calculateTriangleArea() {
   const triangleBField = document.getElementById("triangle-b");
   const triangleHField = document.getElementById("triangle-h");
@@ -25,6 +26,7 @@ function calculateTriangleArea() {
   triangleBField.value = '';
   triangleHString.value = '';
 }
+// function for Rectangle
 function calculateRectangleArea() {
   const rectangleWField = document.getElementById("rectangle-w");
   const rectangleLField = document.getElementById("rectangle-l");
@@ -50,6 +52,7 @@ function calculateRectangleArea() {
   rectangleWField.value = '';
   rectangleLField.value = '';
 }
+// function for Parallelogram
 function calculateParallelogramArea() {
   const parallelogramBField = document.getElementById("parallelogram-b");
   const parallelogramHField = document.getElementById("parallelogram-h");
@@ -76,6 +79,7 @@ function calculateParallelogramArea() {
   parallelogramHField.value = '';
 }
 
+// function for Rhombus
 function calculateRhombusArea() {
   const rhombusD1Field = document.getElementById("rhombus-d1");
   const rhombusD2Field = document.getElementById("rhombus-d2");
@@ -101,6 +105,7 @@ function calculateRhombusArea() {
   rhombusD1Field.value = '';
   rhombusD2Field.value = '';
 }
+// function for pentagon
 function calculatePentagonArea() {
   const pentagonPField = document.getElementById("pentagon-p");
   const pentagonBField = document.getElementById("pentagon-b");
@@ -126,6 +131,7 @@ function calculatePentagonArea() {
   pentagonPField.value = '';
   pentagonBField.value = '';
 }
+// function for ellipse
 function calculateEllipseArea() {
   const ellipseAField = document.getElementById("ellipse-a");
   const ellipseBField = document.getElementById("ellipse-b");
